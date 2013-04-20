@@ -8,7 +8,9 @@
 <script src="phonegap.js"></script>
 <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/API/eventos.js" type="text/javascript"></script>
 </head> 
+
 <body> 
 
 <div data-role="page" id="page">
@@ -44,7 +46,7 @@
 <div data-role="page" id="priv">
 	<div data-role="header">
 		<h1>Privacidad</h1>
-        <a data-role="button" data-rel="back" data-direction="reverse">Atras<a>
+        <a data-role="button" data-rel="back" data-direction="reverse">Atras</a>
 	</div>
 	<div data-role="content" style="text-align:justify">	
 		Información referente a la privacidad que mantendra el hotel, referente a la atención de los clientes y su información. 
@@ -60,9 +62,9 @@
 		<ul data-role="listview" data-inset="true" data-dividertheme="a">
         	<li data-role="list-divider">Datos Usuario</li>
             <li><input type="text" id="regNom" placeholder="Nombre" /> </li>
-            <li><input type="email" id="regMail" placeholder="Nombre" /> </li>	
-            <li><input type="tel" id="redTel" placeholder="Teléfono" /></li>	
-            <li><a href="#" id="registro">Tomar foto</a></li>
+            <li><input type="email" id="regMail" placeholder="Correo" /> </li>	
+            <li><input type="tel" id="regTel" placeholder="Teléfono" /></li>	
+            <li><a href="#" id="regFoto">Tomar foto</a></li>
             </ul>
        <a href="#" data-role="button" id="regEnviar" data-theme="a">Registrar</a>     
 	</div>
