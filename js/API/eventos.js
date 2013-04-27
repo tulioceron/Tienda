@@ -9,17 +9,8 @@ $(document).ready(function(){
 			//validar campos vacios
 			if(nom != '' && email != '' && tel != '')
 			{
-				navigator.notification.confirm("Nombre: "+nom+"\nEmail: "+email+"\nTeléfono: "+tel, function(botones)
-				{
-			switch(botones){
-					case 1:
-						navigator.notification.beep(5);
-						break;
-					case 2:
-						navigator.notification.vibrate(500);
-						break;
-							}
-					}, "Titulo","Beep, Vibrar, Salir");
+				enviarRegistro(nom, tel, email);//mandar a traer la funcion servidor
+				
 				}
 				else{
 					navigator.notification.alert('Todos los campos son requeridos', null, 'Error de Registro', Aceptar);
