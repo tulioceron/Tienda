@@ -1,6 +1,6 @@
 //Eventos
 $(document).ready(function(){
-	document.addEventListener("devicereyady", function() {
+	document.addEventListener("deviceready", function() {
 		window.location.href = '#login';
 		$('#regEnviar').tap(function(){ // tap es igual que click pero mas rapido
 			var nom = $('#regNom').val();
@@ -8,7 +8,7 @@ $(document).ready(function(){
 			var tel= $('#regTel').val();
 			//validar campos vacios
 			if(nom != '' && email != '' && tel != '')
-			{
+			{ 
 				enviarRegistro(nom, tel, email);//mandar a traer la funcion servidor
 				
 				}
