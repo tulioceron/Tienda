@@ -1,7 +1,7 @@
 //Eventos
 $(document).ready(function(){
 	document.addEventListener("devicereyady", function() {
-		window.location.href = '#login'
+		window.location.href = '#login';
 		$('#regEnviar').tap(function(){ // tap es igual que click pero mas rapido
 			var nom = $('#regNom').val();
 			var email = $('#regMail').val();
