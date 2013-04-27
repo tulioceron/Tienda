@@ -13,7 +13,7 @@ $(document).ready(function(){
 				
 				}
 				else{
-					navigator.notification.alert('Todos los campos son requeridos', null, 'Error de Registro', Aceptar);
+					navigator.notification.alert('Todos los campos son requeridos', null, 'Error de Registro', "Aceptar");
 			}
 	}); //click es un metodo
 	}, false);
