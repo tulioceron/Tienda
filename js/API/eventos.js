@@ -9,7 +9,7 @@ $(document).ready(function(){
 			var nom = $('#regNom').val();
 			var email = $('#regMail').val();
 			var tel= $('#regTel').val();
-			var foto= $('#regFoto').attr('ref');
+			var foto= $('#regFoto').attr('rel');
 			//validar campos vacios
 			if(nom != '' && email != '' && tel != '' && foto != undefined && foto != '')
 			{ 
